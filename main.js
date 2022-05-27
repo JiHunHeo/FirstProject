@@ -7,7 +7,7 @@ let resultAreaImg = document.querySelector('.main-img');
 let resultText = document.querySelector('.result-text');
 let chanceArea = document.getElementById('chance-area');
 let gameOver = false;
-let chances = 7; // 남은 기회
+let chances = 5; // 남은 기회
 let userValueList = []; // 유저가 입력한 숫자들 리스트
 
 chanceArea.innerHTML = `남은 기회:${chances}`;
@@ -73,7 +73,7 @@ function reset() {
     resultText.textContent = '죽기 싫다면 맞춰라';
     gameOver = false;
     playButton.disabled = false;
-    chances = 7;
+    chances = 5;
     chanceArea.innerHTML = `남은 기회:${chances}`;
     userValueList = [];
 }
