@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>first</title>
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
+
     <body>
-        <header>
-            <nav>내용을 추가해보았습니다.</nav>
-        </header>
-        <main>
-            <h1>우왕 열심히 해야지</h1>
-            <h2>나는야 신입 ㅋㅋㅋ</h2>
-            <h3>겁날게 없는 신입이지 ㅋㅋㅋㅋ</h3>
-            <h4>깃허브 별거 없군 ㅋㅋㅋ</h4>
-            <h5>껌이야 ㅋㅋㅋㅋㅋ</h5>
-        </main>
-        <footer></footer>
+        <div class="container">
+            <h1 class="pre-title">프론트 엔드반 엠티</h1>
+            <h1 class="title">술게임</h1>
+            <h1 class="sub-title"><span class="red-text">죽음</span>의 업 & 다운</h1>
+            <div id="result-area">
+                <img src="https://media1.giphy.com/media/9DinPR8bzFsmf74j9W/giphy.gif" class="main-img" />
+                <h1 class="result-text">죽기 싫다면 맞춰라</h1>
+            </div>
+            <h2 id="chance-area">남은 기회:</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <input type="number" id="user-input" class="form-control mb-10" placeholder="1부터 100까지 숫자를 입력" />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-success mb-2 button-style" id="play-button">Go!!</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-warning mt-3 button-style button-reset">리셋!</button>
+
         <script src="main.js"></script>
     </body>
 </html>
